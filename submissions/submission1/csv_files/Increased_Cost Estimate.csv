@@ -1,0 +1,23 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),NAt Gateway,Amazon Virtual Private Cloud (VPC),0,77.85,934.20,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),VPC Data Transfer,Amazon Virtual Private Cloud (VPC),0,112.55,1350.60,USD,"DT Inbound: Internet (1 TB per month) 
+, DT Outbound: Internet (1 TB per month) 
+, DT Intra-Region: (1 TB per month) 
+, Data transfer cost (112.55)"
+My Estimate,US East (Ohio),S3 Storage,S3 Standard,0,257.9,3094.80,USD,S3 Standard storage (10000 GB per month)
+My Estimate,US East (Ohio),S3 Storage,Data Transfer,0,92.07,1104.84,USD,"DT Inbound: Internet (1 TB per month) 
+, DT Outbound: Internet (1 TB per month) 
+"
+My Estimate,US East (Ohio),Main DB Instance,Amazon RDS for PostgreSQL,22828,2447.307,52195.68,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year Partial Upfront), Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (1000), Storage amount (1000 GB per month), Instance type (db.m5.12xlarge), Additional backup storage (1000 GB)"
+My Estimate,US East (Ohio),Read replica,Amazon RDS for MariaDB,0,2210.2,26522.40,USD,"Quantity (1), Pricing strategy (On-Demand Instances 1 Year Partial Upfront), Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Instance type (db.m5.8xlarge), Additional backup storage (1000 GB)"
+My Estimate,US East (Ohio),Backend Servers,Amazon EC2,0,6124.1,73489.20,USD,"Operating system (Linux), Quantity (12), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (Ohio),App Web Servers,Amazon EC2,0,6124.1,73489.20,USD,"Operating system (Linux), Quantity (12), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (c6g.8xlarge)"
+My Estimate,US East (Ohio),Load balancers,Elastic Load Balancing,0,750.0699999999999,9000.84,USD,Number of Application Load Balancers (3)
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+Changes made (Alumni notes)
+"I have increased the performance of the servers with addded CPU to increase performance. I have moved the DB to a Multi-AZ deployment for redudancy and reduced RTO and RPO. I have changed to the IOPS Storage for the db to improve performance."

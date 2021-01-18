@@ -1,0 +1,20 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+"My Estimate,US East (N. Virginia),Route 53 DNS Service,Amazon Route 53,0,266.75,3201.00,USD,""Hosted Zones (1), Basic Checks Within AWS (1), Number of Elastic Network Interfaces (2)"""
+"My Estimate,US East (N. Virginia),Web Servers,Amazon EC2,0,5080.5,60966.00,USD,""Operating system (Linux), Quantity (10), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (m5dn.4xlarge)"""
+My Estimate,US East (N. Virginia),NAT Gateways,Amazon Virtual Private Cloud (VPC),0,155.7,1868.40,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),S3 Buckets for Cloudformation,S3 Standard,0,34.7,416.40,USD,S3 Standard storage (1000 GB per month)
+"My Estimate,US East (N. Virginia),S3 Buckets for Cloudformation,Data Transfer,0,92.07,1104.84,USD,""DT Inbound: Internet (1 TB per month) "
+, DT Outbound: Internet (1 TB per month) 
+"
+My Estimate,US East (N. Virginia),Elastic IPs,Amazon Elastic IP,0,0,0.00,USD,Number of EC2 instances (10), Number of EIPs per instance (1)"""
+"My Estimate,US East (N. Virginia),Backend App Servers,Amazon EC2,0,8556.76,102681.12,USD,""Operating system (Linux), Quantity (10), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (c6gd.12xlarge)"""
+"My Estimate,US East (N. Virginia),Main DB Instance,Amazon RDS for PostgreSQL,0,4319.852,51838.22,USD,""Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Instance type (db.m5.12xlarge), Additional backup storage (1000 GB)"""
+"My Estimate,US East (N. Virginia),Read Replica,Amazon RDS for PostgreSQL,0,919.731,11036.77,USD,""Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Instance type (db.m6g.2xlarge), Additional backup storage (1000 GB)"""
+
+
+
+Acknowledgement
+* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.
+
+Changes made (Alumni notes)
+"I have increased the performance and number of the servers to increase performance. I have moved the DB to a Multi-AZ deployment for redudancy and reduced RTO and RPO."

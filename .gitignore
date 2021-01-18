@@ -1,0 +1,6 @@
+*.tfvars
+*.png
+*.jpg
+*.jpeg
+*.zip
+.terraform
